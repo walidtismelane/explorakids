@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Market</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f9f9fb;
+      color: #333;
+    }
+    header {
+      background: #4aa3df;
+      color: #fff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      background: url('https://images.pexels.com/photos/3662667/pexels-photo-3662667.jpeg') center/cover no-repeat;
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+    .btn {
+      background: #ff7f50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    section { padding: 50px 20px; text-align: center; }
+    .products, .offers { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .card img { max-width: 100%; border-radius: 10px; }
+    .price {
+      font-size: 1.1rem;
+      color: #e63946;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a { color: #ff7f50; margin: 0 5px; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+ 	
+	<div class="gtco-loader"></div>
+	
+	<div id="page">
+
+	
+	<!-- <div class="page-inner"> -->
+	<nav class="gtco-nav" role="navigation">
+		<div class="gtco-container">
+			
+			<div class="row">
+				<div class="col-sm-4 col-xs-12">
+					 <a class="navbar-brand" href="#">
+                     <img src="images/Explora sans bg.png" alt="Logo" height="100">
+                     </a>
+				</div>
+				<div class="col-xs-8 text-right menu-1" >
+					<ul>
+						<li><a href="destination.html">Accuiel</a></li>
+						<li class="has-dropdown">
+							<a href="#"> Nos Atelies </a>
+						</li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>	
+				</div>
+			</div>
+			
+		</div>
+	</nav>
+	<header id="gtco-header" class="gtco-cover gtco-cover-md" role="banner" style="background-image: url(images/pexels-vlada-karpovich-7025515.jpg)">
+  <div class="overlay"></div>
+  <div class="gtco-container">
+    <div class="row">
+      <div class="col-md-12 col-md-offset-0 text-left">
+        <div class="row row-mt-15em">
+          <div class="col-md-7 mt-text animate-box" data-animate-effect="fadeInUp">
+            <h1>Planning ateliers Anywhere in The Algeria?</h1>	
+          </div>
+         
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>		
+      </div>
+    </div>
+  </div>
+</header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>مرحباً بكم في Kids Market</h1>
+    <p>كل ما يحتاجه طفلك في مكان واحد</p>
+    <button class="btn">تسوق الآن</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>من نحن؟</h2>
+    <p>Kids Market هو وجهتكم الأولى لتوفير جميع مستلزمات الأطفال من ألعاب، ملابس، أدوات مدرسية، منتجات العناية وأكثر… بجودة عالية وأسعار تنافسية.</p>
+  </section>
+
+  <!-- Products -->
+  <section id="products">
+    <h2>منتجاتنا</h2>
+    <div class="products">
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="لعبة">
+        <h3>🧸 لعبة دب محشو</h3>
+        <p class="price">1500 دج</p>
+        <button class="btn" onclick="sendToWhatsApp('🧸 لعبة دب محشو', '1500 دج')">أضف إلى السلة</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="ملابس">
+        <h3>👕 تيشيرت أطفال</h3>
+        <p class="price">1200 دج</p>
+        <button class="btn" onclick="sendToWhatsApp('👕 تيشيرت أطفال', '1200 دج')">أضف إلى السلة</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="حقيبة">
+        <h3>🎒 حقيبة مدرسية</h3>
+        <p class="price">2500 دج</p>
+        <button class="btn" onclick="sendToWhatsApp('🎒 حقيبة مدرسية', '2500 دج')">أضف إلى السلة</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="عناية">
+        <h3>🍼 رضّاعة أطفال</h3>
+        <p class="price">800 دج</p>
+        <button class="btn" onclick="sendToWhatsApp('🍼 رضّاعة أطفال', '800 دج')">أضف إلى السلة</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="كتب">
+        <h3>📚 كتاب قصص أطفال</h3>
+        <p class="price">900 دج</p>
+        <button class="btn" onclick="sendToWhatsApp('📚 كتاب قصص أطفال', '900 دج')">أضف إلى السلة</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers -->
+  <section id="offers">
+    <h2>أفضل العروض</h2>
+    <div class="offers">
+      <div class="card"><h3>خصم 20%</h3><p>على الألعاب التعليمية</p></div>
+      <div class="card"><h3>خصم 30%</h3><p>على الملابس الصيفية</p></div>
+      <div class="card"><h3>خصم 15%</h3><p>على الحقائب المدرسية</p></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>تواصل معنا</h2>
+    <p>📞 0550 123 456 | ✉️ info@kidsmarket.com</p>
+    <p><a href="https://wa.me/213550123456" target="_blank">راسلنا على واتساب</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kids Market - جميع الحقوق محفوظة</p>
+    <p>
+      <a href="#">فيسبوك</a> | 
+      <a href="#">إنستغرام</a> | 
+      <a href="#">تيك توك</a>
+    </p>
+  </footer>
+
+  <script>
+    function sendToWhatsApp(productName, price) {
+      let phone = "213550123456"; // ضع رقم هاتفك هنا
+      let message = `مرحبا، أود شراء المنتج التالي:\n\n${productName}\nالسعر: ${price}`;
+      let url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>
